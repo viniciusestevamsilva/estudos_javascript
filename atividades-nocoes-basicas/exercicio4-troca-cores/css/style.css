@@ -14,18 +14,6 @@ body {
     flex-direction: column;
 }
 
-header {
-    border-radius: 5px;
-    background-color: #2ea93bb6;
-    padding: 25px 66px;
-    padding-bottom: 30px ;
-    text-align: center;
-}
-
-h1 {
-    color: #ffffff;
-}
-
 main {
     background-color: white;
     padding: 30px;
@@ -33,6 +21,18 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     width: 90%;
+}
+
+header {
+    border-radius: 5px;
+    background-color: #ff7b00d5;
+    padding: 25px 66px;
+    padding-bottom: 30px ;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
 }
 
 input[type="text"] {
@@ -54,14 +54,6 @@ section h1 {
     text-align: center;
 }
 
-.buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 10px;
-}
-
 button {
     padding: 15px;
     font-size: 18px;
@@ -72,24 +64,28 @@ button {
     border-radius: 5px;
 }
 
-
-footer {
-    border-radius: 5px;
-    background-color: #2ea93bb6;
-    color: #ffffff;
-    padding: 30px 90px;
-    padding-bottom: 30px ;
-    text-align: center;
-    font-weight: bold;
+hr {
+    margin: 10px;
 }
 
 #quadrado {
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
-    color: #333;
-    border: 1px solid #2ea93bb6;
+    border: 1px solid #000000b6;
     border-radius: 5px;
-    padding-top: 15px;
+    padding: 150px;
     text-align: center;
+}
+
+#verde {
+    background-color: #0d8d18de;
+}
+
+#vermelho {
+    background-color: #cc0303d3;
+}
+
+#azul{ 
+    background-color: #052ee4d5;
 }
