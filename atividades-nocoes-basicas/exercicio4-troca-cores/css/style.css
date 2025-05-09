@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #333;
+    background-color: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    background-color: white;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -25,7 +25,7 @@ main {
 
 header {
     border-radius: 5px;
-    background-color: #ff7b00d5;
+    background-color: #333;
     padding: 25px 66px;
     padding-bottom: 30px ;
     text-align: center;
@@ -33,15 +33,6 @@ header {
 
 h1 {
     color: #ffffff;
-}
-
-input[type="text"] {
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 16px;
-    border-radius: 5px;
-    width: 100%;
-    border: 1px solid #ccc;
 }
 
 section {
@@ -65,15 +56,12 @@ button {
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
 }
 
-hr {
-    margin: 10px;
-}
-
 #quadrado {
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
     border: 1px solid #000000b6;
+    background-color: #000000d5;
     border-radius: 5px;
     padding: 150px;
     text-align: center;
@@ -84,10 +72,25 @@ hr {
     background-color: #0d8d18de;
 }
 
+#verde:hover {
+    background-color: #054e0b;
+    box-shadow: 0 4px 10px rgb(0, 255, 55);
+}
+
 #vermelho {
     background-color: #cc0303d3;
 }
 
+#vermelho:hover {
+    background-color: #4e0303;
+    box-shadow: 0 4px 10px rgb(255, 0, 0);
+}
+
 #azul{ 
     background-color: #052ee4d5;
+}
+
+#azul:hover {
+    background-color: #001677;
+    box-shadow: 0 4px 10px rgb(0, 68, 255);
 }
