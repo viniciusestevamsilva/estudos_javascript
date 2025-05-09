@@ -62,6 +62,7 @@ button {
     color: #ffffff;
     border: none;
     border-radius: 5px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
 }
 
 hr {
@@ -76,6 +77,7 @@ hr {
     border-radius: 5px;
     padding: 150px;
     text-align: center;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
 }
 
 #verde {
