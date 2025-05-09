@@ -5,16 +5,24 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 body {
-    background-color: #333;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 header {
+    border-radius: 5px;
     background-color: #f7e700d7;
+    padding: 30px;
+    padding-bottom: 30px ;
     text-align: center;
-    padding: 20px;
+    width: auto;
 }
-
 
 h1 {
     color: #333;
@@ -27,7 +35,6 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     width: 90%;
-    margin: 40px auto;
 }
 
 input[type="number"] {
@@ -36,13 +43,12 @@ input[type="number"] {
     font-size: 16px;
     border-radius: 5px;
     width: 100%;
-    border: 5px solid #f7e700d7;
-    background: #333;
-    color: #f7e700d7;
+    border: 1px solid #ccc;
 }
 
 section {
     margin-top: 15px;
+    
 }
 
 section h1 {
@@ -63,33 +69,23 @@ button {
     font-size: 18px;
     font-weight: bold;
     background-color: #f7e700d7;
-    color: white;
+    color: #333;
     border: none;
     border-radius: 5px;
-    width: 100px;
-
 }
 
 button:hover {
-    color: #f7e700d7;
-    background-color: #333;
+    background-color: #4b4605d7;
+    color: #f2f2f2;
 }
 
-footer {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    color: #333;
-    background-color: #f7e700d7;
-    padding: 50px;
-}
 
 #resultado {
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
-    color: #f7e700d7;
-    border-top: 1px solid #ccc;
+    color: #ffffff;
+    border-top: 1px solid #f7e700d7;
     padding-top: 15px;
     text-align: center;
 }
