@@ -16,7 +16,7 @@ body {
 
 header {
     border-radius: 5px;
-    background-color: #e700f7be;
+    background-color: #0073f7be;
     padding: 25px;
     padding-bottom: 30px ;
     text-align: center;
@@ -42,11 +42,13 @@ input[type="text"] {
     border-radius: 5px;
     width: 100%;
     border: 1px solid #ccc;
+    background-color: #0073f7be;
+    color: #ffffff;
 }
 
 section {
     margin-top: 15px;
-    
+     color: #ffffff;
 }
 
 section h1 {
@@ -54,36 +56,6 @@ section h1 {
     text-align: center;
 }
 
-.buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-button {
-    padding: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #0088f7;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    width: 60px;
-    height: 60px;
-}
-
-
-footer {
-    border-radius: 5px;
-    background-color: #e700f7be;
-    color: #ccc;
-    padding: 20px 70px;
-    padding-bottom: 30px ;
-    text-align: center;
-    font-weight: bold;
-}
 #contador {
     margin-top: 20px;
     font-size: 24px;
