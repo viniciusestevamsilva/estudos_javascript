@@ -41,9 +41,10 @@ input[type="text"] {
     font-size: 16px;
     border-radius: 5px;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     background-color: #0073f7be;
     color: #ffffff;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
 }
 
 section {
