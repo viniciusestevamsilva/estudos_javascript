@@ -16,8 +16,8 @@ body {
 
 header {
     border-radius: 5px;
-    background-color: #ff0000d4;
-    padding: 35px 89px;
+    background-color: #6e23e6d4;
+    padding: 35px 48px;
     padding-bottom: 30px ;
     text-align: center;
 }
@@ -35,14 +35,11 @@ main {
     width: 90%;
 }
 
-input[type="text"] {
+input[type="number"] {
     padding: 10px;
     margin: 10px 0;
     font-size: 16px;
     border-radius: 5px;
-    width: 100%;
-    background-color: #ff0000d4;
-    color: #ffffff;
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -56,12 +53,16 @@ section h1 {
     color: #333;
     text-align: center;
 }
+article p {
+    color: #a823e6d4;
+    font-weight: bold;
+}
 
 button {
     padding: 15px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #ff0000d4;
+    background-color: #6e23e6d4;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -69,16 +70,7 @@ button {
 }
 
 button:hover {
-    background-color: #770303;
+    background-color: #360457ef;
     color: #ffffff;
-    box-shadow: 0 5px 4px rgba(255, 0, 0, 0.932);
-}
-
-ul {
-    list-style: none;
-    padding: 10px;
-    border-radius: 5px;
-    border: #ff0000d4 solid 2px;
-    color: #333;
-    font-weight: bold;
+    box-shadow: 0 5px 4px rgba(119, 0, 255, 0.932);
 }

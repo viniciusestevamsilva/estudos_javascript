@@ -16,8 +16,8 @@ body {
 
 header {
     border-radius: 5px;
-    background-color: #ff0000d4;
-    padding: 35px 89px;
+    background-color: #a823e6d4;
+    padding: 35px 48px;
     padding-bottom: 30px ;
     text-align: center;
 }
@@ -41,8 +41,6 @@ input[type="text"] {
     font-size: 16px;
     border-radius: 5px;
     width: 100%;
-    background-color: #ff0000d4;
-    color: #ffffff;
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -56,12 +54,16 @@ section h1 {
     color: #333;
     text-align: center;
 }
+article p {
+    color: #a823e6d4;
+    font-weight: bold;
+}
 
 button {
     padding: 15px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #ff0000d4;
+    background-color: #a823e6d4;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -69,9 +71,9 @@ button {
 }
 
 button:hover {
-    background-color: #770303;
+    background-color: #3c0457d4;
     color: #ffffff;
-    box-shadow: 0 5px 4px rgba(255, 0, 0, 0.932);
+    box-shadow: 0 5px 4px rgba(153, 0, 255, 0.932);
 }
 
 ul {
