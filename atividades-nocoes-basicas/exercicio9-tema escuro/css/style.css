@@ -9,13 +9,11 @@ body {
     background-color: #f2f2f2;
     color: black;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
     transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 20px;
 }
 
 body.tema-escuro {
@@ -26,46 +24,38 @@ body.tema-escuro {
 header {
     background-color: #0088f7;
     color: white;
-    padding: 50px 20px;
+    padding: 30px 60px;
     text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
     width: 100%;
-    border-bottom: 5px solid #0056b3;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-    margin: 0;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 main {
     background-color: white;
-    padding: 40px;
-    border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-    flex-grow: 1;
+    color: black;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
 }
 
 body.tema-escuro main {
     background-color: #333;
-}
-
-footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    border-top: 2px solid #ccc;
-    margin-top: 30px;
-}
-
-body.tema-escuro footer {
-    background-color: #1a1a1a;
     color: white;
 }
 
 button {
+    margin-top: 20px;
     padding: 15px;
     font-size: 18px;
     font-weight: bold;
@@ -74,11 +64,25 @@ button {
     border: none;
     border-radius: 5px;
     width: 200px;
-    height: 50px;
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #093e69;
     box-shadow: 0 4px 10px rgb(0, 162, 255);
+}
+
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    width: 100%;
+    max-width: 600px;
+}
+
+body.tema-escuro footer {
+    color: #ccc;
 }

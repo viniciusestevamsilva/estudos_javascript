@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: #6e23e6d4;
+    background-color: #333;
     padding: 15px 30px;
     border-radius: 5px;
     width: 100%;
@@ -27,12 +27,6 @@ header {
 h1 {
     color: #ffffff;
     font-size: 28px;
-}
-
-article p {
-    color: #a823e6d4;
-    font-weight: bold;
-    text-align: center;
 }
 
 main {
@@ -50,37 +44,35 @@ input[type="number"] {
     font-size: 16px;
     border-radius: 5px;
     width: 100%;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 button {
     display: block;
-    margin: 15px auto;
+    margin: 10px auto;
     padding: 12px 20px;
-    background-color: #6e23e6d4;
-    color: #ffffff;
-    font-weight: bold;
+    background-color: #333;
+    color: #f2f2f2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    font-size: 16px;
-    cursor: pointer;
+    text-align: center;
 }
 
 button:hover {
-    background-color: #360457ef;
-    box-shadow: 0 4px 12px rgba(119, 0, 255, 0.5);
+    background-color: #000000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 #resultado {
     margin-top: 20px;
     font-size: 18px;
-    font-weight: bold;
-    color: #6e23e6d4;
+    font-weight: normal;
+    color: #f2f2f2;
     padding-top: 15px;
-    text-align: center;
+    text-align: left;
     line-height: 1.8;
+    background-color: #333;
     padding: 15px;
     border-radius: 5px;
     max-width: 400px;

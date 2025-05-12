@@ -12,60 +12,44 @@ body {
     align-items: center;
     min-height: 100vh;
     flex-direction: column;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 28px;
 }
 
 main {
     background-color: #ffffff;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 90%;
-}
-
-header {
-    border-radius: 5px;
-    background-color: #333;
-    padding: 25px 66px;
-    padding-bottom: 30px ;
-    text-align: center;
-}
-
-h1 {
-    color: #ffffff;
-}
-
-section {
-    margin-top: 15px;
-    text-align: center;
-}
-
-section h1 {
-    color: #333;
+    width: 100%;
+    max-width: 600px;
     text-align: center;
 }
 
 button {
-    padding: 15px;
-    font-size: 18px;
+    padding: 12px 24px;
+    font-size: 16px;
     font-weight: bold;
-    background-color: #000000;
-    color: #ffffff;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
-}
-
-#quadrado {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    border: 1px solid #000000b6;
-    background-color: #000000d5;
-    border-radius: 5px;
-    padding: 150px;
-    text-align: center;
-    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 #verde {
@@ -74,7 +58,7 @@ button {
 
 #verde:hover {
     background-color: #054e0b;
-    box-shadow: 0 4px 10px rgb(0, 255, 55);
+    box-shadow: 0 4px 10px rgba(0, 255, 55, 0.7);
 }
 
 #vermelho {
@@ -83,14 +67,30 @@ button {
 
 #vermelho:hover {
     background-color: #4e0303;
-    box-shadow: 0 4px 10px rgb(255, 0, 0);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.7);
 }
 
-#azul{ 
+#azul {
     background-color: #052ee4d5;
 }
 
 #azul:hover {
     background-color: #001677;
-    box-shadow: 0 4px 10px rgb(0, 68, 255);
+    box-shadow: 0 4px 10px rgba(0, 68, 255, 0.7);
+}
+
+#quadrado {
+    margin: 30px auto 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid #000000b6;
+    background-color: #000000d5;
+    color: white;
+    border-radius: 8px;
+    padding: 120px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
 }
