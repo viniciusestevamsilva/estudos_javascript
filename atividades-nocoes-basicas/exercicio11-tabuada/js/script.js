@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const numero = document.getElementById('numero').value;
     const resultado = document.getElementById('resultado');
 
-    // Limpa resultados anteriores
+   
     resultado.innerHTML = '';
 
     if (numero === '') {

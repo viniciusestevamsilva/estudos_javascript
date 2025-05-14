@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        // Resultado final
+        
         if (valor === '') {
             mensagem.textContent = 'Digite uma senha.';
 
