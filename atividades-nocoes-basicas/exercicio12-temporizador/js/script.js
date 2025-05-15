@@ -1,20 +1,18 @@
+document.addEventListener('DOMContentLoaded', function () {
 
-    const temporizador = document.getElementById('temporizador');
-    let i = 10;
+    let tempo = 10;
+    const display = document.getElementById("temporizador");
 
-    while (i >= 0) {
-      
-      if (i === 0) {
-        temporizador.textContent = 'Tempo esgotado!';
+    const intervalo = setInterval(() => {
+
+      display.textContent = tempo;
+
+      if (tempo === 0) {
+        clearInterval(intervalo);
+        display.textContent = "Tempo esgotado!";
+
       } else {
-        temporizador.textContent = i;
+        tempo--;
       }
-
-      
-      let espera = 0;
-      while (espera < 99999999) {
-        espera++;
-      }
-
-      i--;
-    }
+    }, 1000);
+});

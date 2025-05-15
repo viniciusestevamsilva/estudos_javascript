@@ -33,6 +33,7 @@ article p {
     color: #333;
     font-weight: bold;
     text-align: center;
+    font-size: 1.8rem;
 }
 
 main {
@@ -46,7 +47,7 @@ main {
 
 #temporizador{
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 2rem;
     font-weight: bold;
     color: #e62343ba;
     padding-top: 15px;
