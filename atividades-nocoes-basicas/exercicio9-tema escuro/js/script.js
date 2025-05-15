@@ -1,20 +1,39 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const botaoTema = document.getElementById('alternar-tema');
-    const body = document.body; // Referência ao body
-    let temaClaro = true;
+    const body = document.getElementById('corpo');
+    const header = document.getElementById('cabecalho');
+    const main = document.getElementById('principal');
+    const footer = document.getElementById('rodape');
+    const btnTrocar = document.getElementById('btnTrocar');
 
-    
-    body.classList.add('tema-claro');
+    let temaClaro = true; 
 
-    botaoTema.addEventListener('click', function () {
+    btnTrocar.addEventListener('click', function () {
         if (temaClaro) {
-            body.classList.remove('tema-claro');
-            body.classList.add('tema-escuro');
+
+            body.style.backgroundColor = '#121212';
+            body.style.color = 'white';
+
+            header.style.backgroundColor = '#1e1e1e';
+            header.style.color = 'white';
+
+            main.style.backgroundColor = '#333';
+            main.style.color = 'white';
+
+            footer.style.color = '#ccc';
         } else {
-            body.classList.remove('tema-escuro');
-            body.classList.add('tema-claro'); 
+   
+            body.style.backgroundColor = '#f2f2f2';
+            body.style.color = 'black';
+
+            header.style.backgroundColor = '#0088f7';
+            header.style.color = 'white';
+
+            main.style.backgroundColor = 'white';
+            main.style.color = 'black';
+
+            footer.style.color = '#333';
         }
 
-        temaClaro = !temaClaro; // Inverte o tema
+        temaClaro = !temaClaro;
     });
 });

@@ -8,17 +8,12 @@
 body {
     background-color: #f2f2f2;
     color: black;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    padding: 20px;
-}
-
-body.tema-escuro {
-    background-color: #121212;
-    color: white;
+    transition: background-color 0.3s ease;
 }
 
 header {
@@ -33,10 +28,6 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
-    font-size: 2em;
-}
-
 main {
     background-color: white;
     color: black;
@@ -45,13 +36,8 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 600px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease;
     text-align: center;
-}
-
-body.tema-escuro main {
-    background-color: #333;
-    color: white;
 }
 
 button {
@@ -81,8 +67,4 @@ footer {
     font-size: 14px;
     width: 100%;
     max-width: 600px;
-}
-
-body.tema-escuro footer {
-    color: #ccc;
 }
