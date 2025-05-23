@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Area</title>
-
+    <title>Funções Anônimas</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
-        <h1>Calculadora de Area do Quadrado</h1>
-        <label for="ladoInput">Informe o valor do lado:</label>
-
-        <!-- "any" significa que qualquer valor numérico é aceito (incluido decimais)-->
-        <input type="number" id="ladoInput" placeholder="Ex: 5" min="0" step="any">
-        <button id="calcularBtn">Calcular Area</button>
+    <main class="container">
+        <h1>Exemplo: Funções Anônimas</h1>
+        <p>Clique no botão abaixo para ver uma saudação usando função anônimas.</p>
+        <div class="button-group">
+            <button id="saudar" class="btn">Saudação</button>
+            <button id="limpar" class="btn">Limpar</button>
+        </div>
+        <div id="resultado" class="caixa-resultado"></div>
+        <h1>Implemente esse codigo para receber o nome via teclado</h1>
         <p id="resultado" class="resultado"></p>
     </main>
 

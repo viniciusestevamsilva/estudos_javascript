@@ -1,30 +1,29 @@
+const saudacao = function (nome) {
+    return `Olá, ${nome}| Seja bem-vindo(a).`;
+}
+
+const mostrarResultado = (mensagem) => {
+
+    const resultadoElement = document.getElementById('resultado');
+
+    resultadoElement.innerHTML = `<p>${mensagem}<p>`;
+
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-    const botao = document.getElementById('calcularBtn');
 
-    botao.addEventListener('click', () => {
+    const saudarBtn = document.getElementById('saudar');
+    const limparBtn = document.getElementById('limpar');
 
-        const input = document.getElementById('ladoInput');
+    saudarBtn.addEventListener('click', function () {
 
-        const lado = parseFloat(input.value);
+        const mensagem = saudacao("joão");
 
-        if (isNaN(lado) || lado <= 0) {
+        mostrarResultado(mensagem);
+    });
 
-            mostrarMensagem('Por favor, insira um valor válido maior que zero.');
-            return;
-        }
+    limparBtn.addEventListener('click', () => {
 
-        const area = calcularAreaQuadrado(lado);
-
-        mostrarMensagem(`A área do quadrado com lado ${lado} é ${area}`);
-
+        document.getElementById('resultado').innerHTML = '';
     });
 });
-
-function calcularAreaQuadrado(lado) {
-    return lado * lado;
-}
-
-function mostrarMensagem(texto) {
-    const resultado = document.getElementById('resultado');
-    resultado.textContent = texto;
-}
