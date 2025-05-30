@@ -78,11 +78,11 @@ document.getElementById('botao-filtrar').addEventListener('click', function() {
     });
 
     // Exibindo o resultados
-    document.getElementById('resulados-filtrar').innerHTML= `
+     document.getElementById('resultado-filtrar').innerHTML = `
         <strong>Array Original:</strong> ${JSON.stringify(pessoas, null, 2)}<br><br>
         <strong>Maiores de idade (filter):</strong> ${JSON.stringify(maioresDeIdade, null, 2)} <br>
-        <small>Observação: Filter retorna um novo array apenas com elementos que passam no teste</small>
-        `;
+        <small>Observação: filter retorna um novo array apenas com elementos que passam no teste</small>
+    `;
 });
 
 /**
@@ -91,7 +91,7 @@ document.getElementById('botao-filtrar').addEventListener('click', function() {
  */
 document.getElementById('botao-reduzir').addEventListener('click', function() {
     //Somando todos os numeros do array
-    const somaTtoal = numeros.reduce(function(acumulador, numeroAtual) {
+    const somaTotal = numeros.reduce(function(acumulador, numeroAtual) {
         return acumulador + numeroAtual;
 
     }, 0); // 0 é o valor inicial do acumulador
@@ -101,5 +101,53 @@ document.getElementById('botao-reduzir').addEventListener('click', function() {
         <strong>Array Original:</strong> ${JSON.stringify(numeros)}<br><br>
         <strong>Maiores de idade (filter):</strong> ${somaTotal} <br>
         <small>Observação: reduce pode transfomra um arrya em qualquer tipo de vaslor</small>
-       `
-})
+       `;
+});
+
+/**
+ * METODO:  find() (encontra)
+ * DESCRIÇÃO: Retorna o primeiro elemento que satisfaz uma condição
+ */
+document.getElementById('botao-encontrar').addEventListener('click', function() {
+    // Encontradno a primeira pessoa menor de idade
+    const menorDeIdade = pessoas.find(function(pessoa) {
+        return pessoa.idade < 18;
+    });
+
+    // Exibindo o resultado
+    document.getElementById('resultado-encontrar').innerHTML = `
+        <strong>Array Original:</strong> ${JSON.stringify(pessoas, null, 2)}<br><br>
+        <strong>Primeiro menor de idade (find):</strong> ${JSON.stringify(menorDeIdade)}</small>
+        <small>Observação: find retorna apenas o primeiro elemento encontrado</small>`;
+});
+
+/**
+ * MÉTODOS: some() (algum) e every() (todos)
+ * DESCRIÇÃO:
+ * - some(): Verifica se pelo menos um elemento satisfaz a condição
+ * - every(): Verifica se todos os elemetos satisfazem a condição
+ */
+document.getElementById('botao-algum').addEventListener('click', function() {
+    // Verificando se ha pelo menos um menor de idade
+    const existeMenor = pessoas.some(function(pessoa) {
+        return pessoa.idade < 18;
+    });
+
+    document.getElementById('resultado-algum').innerHTML = `
+        <strong>Array Original:</strong> ${JSON.stringify(pessoas, null, 2)}<br><br>
+        <strong>Exite menor de idade (find):</strong> ${existeMenor ? 'Sim' : 'Não'}<br><br>
+        <small>Observação: some retorna true se pelo menos um elemento passar no teste</small>
+        `;
+});
+
+document.getElementById('botao-todos').addEventListener('click', function() {
+    // Verificando se todos sao maiores de idade
+    const todosMaiores = pessoas.every(function(pessoa) {
+        return pessoa.idade >= 18;
+    });
+
+        document.getElementById('resultado-todos').innerHTML = `
+        <strong>Todos são maiores de idade (every):</strong> ${todosMaiores ? 'Sim' : 'Não'}<br>
+        <small>Observação: every retorna true se todos os elementos passarem no teste</small>
+    `;
+});
