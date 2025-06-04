@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle Cor</title>
+    <title>Loja de Produtos</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,27 +12,25 @@
         <h1>Loja de Produtos</h1>
     </header>
 
-    <main >
-        
+    <main>
         <section>
-
             <article>
-
-            <label>Filtrar por categoria</label>
+                <label for="seletor">Filtrar por categoria</label>
                 <select id="seletor">
-                    <option id="btnTodos">Todos</option>
-                    <option id="btnAlimentos">Alimentos</option>
-                    <option id="btnCosmeticos">Cosmeticos</option>
+                    <option value="todos">Todos</option>
+                    <option value="alimento">Alimentos</option>
+                    <option value="cosmetico">Cosmeticos</option>
                 </select>
-              
             </article>
         </section>
+
         <section>
-            <p>Total R$:<div id="resultado"></div></p>
-    
+            <h3>Produtos:</h3>
+            <ul id="listaProdutos"></ul> <!-- Aqui mostra os nomes dos produtos -->
+
+            <h3>Total R$:</h3>
+            <div id="resultado"></div> <!-- Aqui mostra o valor total -->
         </section>
-
-
     </main>
 
     <script src="js/script.js"></script>
