@@ -1,48 +1,60 @@
 const produtos = [
-    { nome: 'Sabonete Natural', preco: 15.00, categoria: "cosmetico" },
-    { nome: 'Shampoo Organico', preco: 25.00, categoria: "cosmetico" },
-    { nome: 'Granola Artesanal', preco: 18.50, categoria: "alimento" },
-    { nome: 'Mel Puro', preco: 22.00, categoria: "alimento" }
+  { nome: "Sabonete Natural", preco: 15.0, categoria: "cosmetico" },
+  { nome: "Shampoo Organico", preco: 25.0, categoria: "cosmetico" },
+  { nome: "Granola Artesanal", preco: 18.5, categoria: "alimento" },
+  { nome: "Mel Puro", preco: 22.0, categoria: "alimento" },
 ];
 
+document.addEventListener("DOMContentLoaded", function () {
+  const seletor = document.getElementById("seletor");
+  const resultado = document.getElementById("resultado");
+  const listaProdutos = document.getElementById("listaProdutos");
 
-document.addEventListener('DOMContentLoaded', function () {
-    const seletor = document.getElementById('seletor');
-    const resultado = document.getElementById('resultado');
-    const listaProdutos = document.getElementById('listaProdutos');
+  seletor.addEventListener("change", function () {
+   
+    const categoriaSelecionada = seletor.value;
 
-    seletor.addEventListener('change', function () {
-        // Pegar valor selecionado
-        const categoriaSelecionada = seletor.value;
+    let produtosFiltrados = [];
 
-        // Criar novo array com os produtos filtrados
-        let produtosFiltrados = [];
+    if (categoriaSelecionada === "todos") {
+      produtosFiltrados = produtos;
+    } else {
+      
+      produtosFiltrados = produtos.filter(function (produto) {
+        return produto.categoria === categoriaSelecionada;
+      });
+    }
 
-        if (categoriaSelecionada === 'todos') {
-            produtosFiltrados = produtos;
-        } else {
-            // Usando .filter para criar novo array com produtos da categoria
-            produtosFiltrados = produtos.filter(function(produto) {
-                return produto.categoria === categoriaSelecionada;
-            });
-        }
+    let total = produtosFiltrados.reduce(function (soma, produto) {
+      return soma + produto.preco;
+    }, 0);
 
-        // Usando .reduce para somar os preços dos produtos filtrados
-        let total = produtosFiltrados.reduce(function(soma, produto) {
-            return soma + produto.preco;
-        }, 0);
+    
+    resultado.innerHTML = "R$ " + total;
 
-        // Mostrar total na tela
-        resultado.innerHTML = 'R$ ' + total;
+   
+    listaProdutos.innerHTML = "";
 
-        // Limpar a lista antes de mostrar os novos
-        listaProdutos.innerHTML = '';
+    
+    produtosFiltrados.forEach(function (produto) {
+      const item = document.createElement("li");
 
-        // Usar forEach para mostrar os produtos filtrados
-        produtosFiltrados.forEach(function(produto) {
-            const item = document.createElement('li');
-            item.textContent = produto.nome + ' - R$ ' + produto.preco;
-            listaProdutos.appendChild(item);
-        });
+     
+      const nome = document.createElement("p");
+      nome.classList.add("nome-produto");
+      nome.textContent = produto.nome;
+
+      
+      const preco = document.createElement("p");
+      preco.classList.add("preco-produto");
+      preco.textContent = "R$ " + produto.preco;
+
+      
+      item.appendChild(nome);
+      item.appendChild(preco);
+
+      
+      listaProdutos.appendChild(item);
     });
+  });
 });

@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+header h1 {
+    padding: 50px;
+}
+
+label, p {
+    font-size: 1.1rem;
+    margin-left: 2%;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+li {
+    background-color: #ffffff;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 5%;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+#listaProdutos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2%;
+}
+
+#listaProdutos li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+}
+
+.nome-produto {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.preco-produto {
+    color: green;
+}
