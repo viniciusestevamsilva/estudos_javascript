@@ -3,6 +3,11 @@
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
+    text-align: left;
+}
+
+section {
+    margin-left: 20px
 }
 
 header {
@@ -13,45 +18,30 @@ header {
     color: #ffffff;
     font-size: 1.2rem;
     margin-bottom: 20px;
+    padding: 20px;
 }
+
 header h1 {
-    padding: 50px;
-}
-
-label, p {
-    font-size: 1.1rem;
-    margin-left: 2%;
-}
-
-
-ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
+    padding: 20px;
 }
 
 li {
-    background-color: #ffffff;
-    padding: 2%;
-    margin: 2%;
-    border-radius: 5%;
-    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid #b8b8b8f9;
+    padding: 10px;
+    margin-left: 0px;
 }
 
 #listaProdutos {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 2%;
+    gap: 5px;
+    padding: 10px;
 }
 
 #listaProdutos li {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 150px;
-    text-align: center;
+    width: 180px;
 }
 
 .nome-produto {
@@ -59,6 +49,7 @@ li {
     margin-bottom: 5px;
 }
 
-.preco-produto {
-    color: green;
+.total-container {
+    display: flex;
+    margin-top: 20px;
 }
