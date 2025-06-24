@@ -1,0 +1,41 @@
+<!-- A startup CodeMetrics precisa de uma funcionalidade para seu portal de análise de dados. Sua tarefa é criar uma página
+ onde o usuário digite três números, e ao clicar em um botão, o site informe qual é o maior número, o menor ou se todos são
+ iguais. A interface deve ser clara, amigável e com feedback imediato. -->
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <header>
+
+  </header>
+
+  <main>
+
+    
+  <!-- C) Monitoramento de Velocidade -->
+  <div class="container">
+    <h2>C) Monitoramento de Velocidade</h2>
+    <label for="velocidade">Informe a velocidade do veículo (km/h):</label>
+    <input type="number" id="velocidade" />
+    <button onclick="verificarVelocidade()">Verificar Velocidade</button>
+    <p class="resultado" id="resultadoVelocidade"></p>
+  </div>
+
+  <!-- D) Cálculo de Aumento Salarial -->
+  <div class="container">
+    <h2>D) Cálculo de Aumento Salarial</h2>
+    <label for="salario">Informe o salário atual (R$):</label>
+    <input type="number" id="salario" step="0.01" />
+    <button onclick="calcularAumento()">Calcular Novo Salário</button>
+    <p class="resultado" id="resultadoSalario"></p>
+  </div>
+  </main>
+  
+</body>

@@ -1,0 +1,43 @@
+<!-- A empresa WebData Solutions contratou você para desenvolver uma página interativa que ajude seus usuários a classificar números.
+Eles precisam de uma interface onde o usuário insira um número inteiro, clique em um botão e receba na tela a informação se o número
+é par ou ímpar. Esse recurso será integrado ao site da empresa para pequenos cálculos rápidos. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <header>
+
+  </header>
+
+  <main>
+
+      <div class="container">
+    <h2>A Verificação de Par ou Ímpar</h2>
+    <label for="numeroParImpar">Digite um número inteiro:</label>
+    <input type="number" id="numeroParImpar" />
+    <button onclick="verificarParOuImpar()">Verificar</button>
+    <p class="resultado" id="resultadoParImpar"></p>
+  </div>
+
+  <div class="container">
+    <h2>B Maior, Menor ou Iguais</h2>
+    <label>Digite três números:</label>
+    <input type="number" id="num1" placeholder="Número 1" />
+    <input type="number" id="num2" placeholder="Número 2" />
+    <input type="number" id="num3" placeholder="Número 3" />
+    <button onclick="verificarNumeros()">Analisar</button>
+    <p class="resultado" id="resultadoNumeros"></p>
+  </div>
+
+
+  </main>
+
+</body>
