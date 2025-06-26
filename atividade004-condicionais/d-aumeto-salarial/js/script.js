@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let novoSalario = salario;
 
-    if (salario < 1000) {
+    if (salario <= 1000) {
       novoSalario = salario * 1.10;
       resultado.innerHTML = `Salário com aumento de 10%: R$ ${novoSalario.toFixed(2)}`;
-    } else if (salario > 1500) {
+    } else if (salario >= 1500) {
       novoSalario = salario * 1.05;
       resultado.innerHTML = `Salário com aumento de 5%: R$ ${novoSalario.toFixed(2)}`;
     } else {
