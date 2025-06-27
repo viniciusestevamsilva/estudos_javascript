@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    if (n1 === n2 && n2 === n3) {
+    if (numero1 === numero2 && numero2 === numero3) {
       resultado.textContent = 'Todos os números são IGUAIS.';
     } else {
       const maior = Math.max(numero1, numero2, numero3);

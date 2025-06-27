@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+  
   const inputDistancia = document.getElementById('distancia');
   const botaoCalcular = document.getElementById('btnCalcular');
   const resultado = document.getElementById('resultadoPreco');
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     let preco = 0;
+
     if (distancia <= 200) {
       preco = distancia * 0.70;
     } else {

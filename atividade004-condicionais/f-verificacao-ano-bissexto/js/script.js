@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+  
   const btn = document.getElementById('btnVerificarAno');
   const resultado = document.getElementById('resultadoAno');
 
@@ -17,5 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       resultado.innerHTML = `<span class="alerta">${ano} NÃO é um ano bissexto.</span>`;
     }
+
   });
 });

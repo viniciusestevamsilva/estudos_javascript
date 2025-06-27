@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
+  
   const botao = document.getElementById('btnVerificarTriangulo');
   const resultado = document.getElementById('resultadoTriangulo');
 
   botao.addEventListener('click', function () {
+
     const a = parseFloat(document.getElementById('lado1').value);
     const b = parseFloat(document.getElementById('lado2').value);
     const c = parseFloat(document.getElementById('lado3').value);
@@ -17,5 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       resultado.innerHTML = '<span class="alerta">Não é possível formar um triângulo com esses lados.</span>';
     }
+
   });
 });

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const resultado = document.getElementById('resultadoVelocidade');
 
   botaoVerificar.addEventListener('click', function () {
-    const velocidade = parseFloat(inputVelocidade.value);
+    const velocidade = Number(inputVelocidade.value);
 
     if (isNaN(velocidade) || velocidade < 0) {
       resultado.innerHTML = '<span class="alerta">Por favor, informe uma velocidade válida.</span>';

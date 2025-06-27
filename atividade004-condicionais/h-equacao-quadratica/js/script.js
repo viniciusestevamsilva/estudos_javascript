@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
   const btn = document.getElementById('btnCalcular');
   const resultado = document.getElementById('resultadoBhaskara');
 
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     const delta = b * b - 4 * a * c;
 
-    function raizQuadrada(n) {
+    function raizquadrada(n) {
       let x = n;
       let y = 1;
       let e = 0.000001;
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return x;
     }
 
-    const raizDelta = raizQuadrada(delta);
+    const raizDelta = raizquadrada(delta);
 
     const x1 = (-b + raizDelta) / (2 * a);
     const x2 = (-b - raizDelta) / (2 * a);
@@ -35,5 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
       <p>x" = (-${b} - √${delta}) / (2 × ${a}) = ${x2.toFixed(2)}</p>
       <p><strong>Raízes da equação:</strong> x' = ${x1.toFixed(2)} e x" = ${x2.toFixed(2)}</p>
     `;
+
   });
 });

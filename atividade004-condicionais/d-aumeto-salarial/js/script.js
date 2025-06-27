@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+  
   const inputSalario = document.getElementById('salario');
   const botaoCalcular = document.getElementById('btnCalcularSalario');
   const resultado = document.getElementById('resultadoSalario');
@@ -22,5 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       resultado.innerHTML = `Salário permanece o mesmo: R$ ${salario.toFixed(2)}`;
     }
+
   });
 });
