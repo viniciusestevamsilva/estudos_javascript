@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const resultado = document.getElementById('resultadoBhaskara');
 
   btn.addEventListener('click', function () {
-    const a = 1;
-    const b = -6;
-    const c = 5;
+    const a = parseFloat(document.getElementById('inputA').value);
+    const b = parseFloat(document.getElementById('inputB').value);
+    const c = parseFloat(document.getElementById('inputC').value);
 
   
     const delta = b * b - 4 * a * c;
